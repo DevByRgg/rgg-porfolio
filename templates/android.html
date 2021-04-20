@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<main id="android-grid">
+    <!-- Card usuario -->
+    <div class="grid-flex mainCard">
+        <a class="noDeco" href="{{ url_for('fitMed') }}">
+            <img class="mainCard-img" src="{{ url_for('static', filename='img/android/fitmed_logo_512px.png') }}">
+            <div class="mainCard-text">
+                <p>FitMed</p>
+            </div>
+        </a>
+        
+    </div>
+    <!-- Card usuario -->
+    
+    <!-- Card usuario -->
+    <div class="grid-flex mainCard">
+        <a class="noDeco" href="{{ url_for('gestAulasMobile') }}">
+            <img class="mainCard-img" src="{{ url_for('static', filename='img/android/gestaulas_mobile_logo_512px.png') }}">
+            <div class="mainCard-text">
+                <p>GestAulasMob</p>
+            </div>
+        </a>
+    </div>
+    <!-- Card usuario -->
+
+    <!-- Card usuario -->
+    <div class="grid-flex mainCard">
+        <a class="noDeco" href="{{ url_for('gesTension') }}">
+            <img class="mainCard-img" src="{{ url_for('static', filename='img/android/gestension_logo_512px.png') }}">
+            <div class="mainCard-text">
+                <p>GesTension</p>
+            </div>
+        </a>
+    </div>
+    <!-- Card usuario -->
+</main>
+
+{% endblock %}

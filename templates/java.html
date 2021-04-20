@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<main id="java-grid">
+    <!-- Card usuario -->
+    <div class="grid-flex mainCard">
+        <a class="noDeco" href="{{ url_for('hotel') }}">
+            <img class="mainCard-img" src="{{ url_for('static', filename='img/java/gesthotel_logo_512px.png') }}">
+            <div class="mainCard-text">
+                <p>GestHotel</p>
+            </div>
+        </a>
+        
+    </div>
+    <!-- Card usuario -->
+    <!-- Card usuario -->
+    <div class="grid-flex mainCard">
+        <a class="noDeco" href="{{ url_for('aulas') }}">
+            <img class="mainCard-img" src="{{ url_for('static', filename='img/java/gestaulas_logo_512px.png') }}">
+            <div class="mainCard-text">
+                <p>GestAulas</p>
+            </div>
+        </a>
+    </div>
+    <!-- Card usuario -->
+
+</main>
+
+{% endblock %}

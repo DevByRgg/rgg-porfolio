@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<main id="main-grid">
+    <!-- Card usuario -->
+    <div class="grid-flex mainCard">
+        <a class="noDeco" href="{{ url_for('java') }}">
+            <img class="mainCard-img" src="{{ url_for('static', filename='img/java_logo_512px.png') }}">
+            <div class="mainCard-text">
+                <p>Java</p>
+            </div>
+        </a>
+    </div>
+    <!-- Card usuario -->
+    <!-- Card usuario -->
+    <div class="grid-flex mainCard">
+        <a class="noDeco" href="{{ url_for('python') }}">
+            <img class="mainCard-img" src="{{ url_for('static', filename='img/python_logo_512px.png') }}">
+            <div class="mainCard-text">
+                <p>Python</p>
+            </div>
+        </a>
+    </div> 
+    <!-- Card usuario -->
+    <!-- Card usuario -->
+    <div class="grid-flex mainCard">
+        <a class="noDeco" href="{{ url_for('android') }}">
+            <img class="mainCard-img" src="{{ url_for('static', filename='img/android_logo_512px.png') }}">
+            <div class="mainCard-text">
+                <p>Android</p>
+            </div>    
+        </a>
+    </div>
+    <!-- Card usuario -->
+    <!-- Card usuario -->
+    <div class="grid-flex mainCard">
+        <a class="noDeco" href="{{ url_for('javaScript') }}">
+            <img class="mainCard-img" src="{{ url_for('static', filename='img/javaScript_logo_512px.png') }}">
+            <div class="mainCard-text">
+                <p>JavaScript</p>
+            </div>    
+        </a>
+    </div>
+    <!-- Card usuario -->
+</main>
+
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container"></div>
+<div class="card mt-5 mx-auto mb-5 w-75 customShadow">
+    <div class="card-header bg-gris-01 d-flex">
+        <img class="rounded-lg ml-auto" src="{{ url_for('static', filename='img/android/fitmed_logo_512px.png') }}" width="auto" height="100px" alt="Card image">
+    </div>
+    
+    <div class="card-body">
+        <h3 class="card-title">FitMed</h3>
+        <h5 class="card-text font-weight-bold pt-2">Version:<span class="font-weight-normal ml-2">v1.0</span></h5>
+        <h5 class="card-text font-weight-bold pt-2">Desarrollador:<a class="text-decoration-none text-info ml-3" href="{{ url_for('home') }}">rgilgil</a></p>
+        <h5 class="card-text font-weight-bold pt-2">Categoria:<span class="font-weight-normal ml-2">Salud</span></h5>
+        <h5 class="card-text font-weight-bold pt-2">Descripcion:</h5>
+        <h5 class="font-weight-normal pt-2">
+            Aplicación para complementar el entrenamiento personal y llevar un registro del 
+            peso y las principales medidas del cuerpo, asi mismo como almacenar los datos para 
+            poder compararlos y ver nuestra evolución.
+        </h5>
+        <h5 class="card-text font-weight-bold pt-2">Caracteristicas:</h5>  
+        <h5 class="font-weight-normal pt-2">
+            -Almacenamiento de datos en base de datos local, no son necesarios datos ni 
+            compartir ningun dato personal.
+        </h5>
+        <h5 class="font-weight-normal pt-2">
+            -Permite exportar los informes con los datos a formato pdf.
+        </h5>
+        <h5 class="font-weight-normal pt-2">
+            -Calculo del indice de masa corporal, bien importando tus datos de la base de datos o introduciendolos
+            manualmente
+        </h5>  
+        <h5 class="card-text font-weight-bold mt-4">Capturas de pantalla:</h5>  
+        <div class="row text-center text-lg-left pt-2">
+            <div class="col-lg-3 col-lg-3 col-6">
+                <a href="{{ url_for('static', filename='img/android/screenshot_fitmed_01.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/android/screenshot_fitmed_01.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">
+                <a href="{{ url_for('static', filename='img/android/screenshot_fitmed_02.jpg') }}" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/android/screenshot_fitmed_02.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">
+                <a href="{{ url_for('static', filename='img/android/screenshot_fitmed_03.jpg') }}" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/android/screenshot_fitmed_03.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">
+                <a href="{{ url_for('static', filename='img/android/screenshot_fitmed_04.jpg') }}" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/android/screenshot_fitmed_04.jpg') }}" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-footer bg-gris-01 p-4">
+        <a class="btn-lg btn-primary bg-navbar text-decoration-none font-weight-bold mb-2 ml-5 float-right" href="{{ url_for('static', filename='apk/FitMed_20200724.apk') }}">Descargar</a>
+        <a class="btn-lg btn-primary bg-navbar text-decoration-none font-weight-bold mb-2 float-right" href="{{ url_for('srcFitMed') }}">Codigo Fuente</a>
+    </div>
+        
+    
+</div>
+
+{% endblock %}

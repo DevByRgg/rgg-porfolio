@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container"></div>
+<div class="card mt-5 mx-auto mb-5 w-75 customShadow">
+    <div class="card-header bg-gris-01 d-flex">
+        <img class="rounded-lg ml-auto" src="{{ url_for('static', filename='img/android/gestaulas_mobile_logo_512px.png') }}" width="auto" height="100px" alt="Card image">
+    </div>
+    
+    <div class="card-body">
+        <h3 class="card-title">GestAulas Mobile</h3>
+        <h5 class="card-text font-weight-bold pt-2">Version:<span class="font-weight-normal ml-2">v1.0</span></h5>
+        <h5 class="card-text font-weight-bold pt-2">Desarrollador:<a class="text-decoration-none text-info ml-3" href="{{ url_for('home') }}">rgilgil</a></p>
+        <h5 class="card-text font-weight-bold pt-2">Categoria:<span class="font-weight-normal ml-2">App mobile for Java con Spring</span></h5>
+        <h5 class="card-text font-weight-bold pt-2">Descripcion:<span class="font-weight-normal ml-2">Aplicacion movil para la consulta de los horarios de las aulas de la academia</span></h5>
+        <h5 class="card-text font-weight-bold pt-2">Caracteristicas:</h5>
+        <h4 class="font-weight-normal">
+            <!--Java-->
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Java</span>
+            <!--Android-->
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Android</span>
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Android SDK</span>
+            <!--Repositorios-->
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Github</span>
+        </h4>
+        
+        <div class="row text-center text-lg-left pt-5">
+            <div class="col-lg-3 col-lg-3 col-6">
+                
+                <a href="{{ url_for('static', filename='img/android/screenshot_fitmed_01.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/android/screenshot_fitmed_01.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">
+                <a href="{{ url_for('static', filename='img/android/screenshot_fitmed_02.jpg') }}" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/android/screenshot_fitmed_02.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">
+                <a href="{{ url_for('static', filename='img/android/screenshot_fitmed_03.jpg') }}" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/android/screenshot_fitmed_03.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">
+                <a href="{{ url_for('static', filename='img/android/screenshot_fitmed_04.jpg') }}" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/android/screenshot_fitmed_04.jpg') }}" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card-footer bg-gris-01 p-4">
+        <a class="btn-lg btn-secondary bg-gris-04 text-decoration-none font-weight-bold mb-2 ml-5 float-right" href="{{ url_for('static', filename='apk/FitMed_20200724.apk') }}">Descargar</a>
+        <a class="btn-lg btn-secondary bg-gris-04 text-decoration-none font-weight-bold mb-2 float-right" href="{{ url_for('static', filename='img/logo_work_in_progress.png') }}">Codigo Fuente</a>
+    </div>
+        
+    
+</div>
+
+{% endblock %}

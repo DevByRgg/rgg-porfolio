@@ -1,0 +1,110 @@
+/*Definimos GRID container*/
+#nav-grid{
+    height: 40px;
+    display: grid;
+    
+    /*Posicion de las areas*/
+    grid-template-areas: 
+        "brand java python android javaScript about";
+    
+    background-color: #3174b9;
+}
+/*Definimos las areas del grid*/
+nav > div:first-of-type{
+    grid-area: brand;
+    justify-content: flex-start;
+    margin-left: 2rem;
+}
+nav > div:nth-child(2){
+    grid-area: java;
+}
+nav > div:nth-child(3){
+    grid-area: python;
+}
+nav > div:nth-child(4){
+    grid-area: android;
+}
+nav > div:nth-child(5){
+    grid-area: javaScript;
+}
+nav > div:last-of-type{
+    grid-area: about;
+    justify-content: flex-end;
+    margin-right: 2rem;
+}
+
+@media(max-width: 800px){
+    #nav-grid{
+        height: 120px;
+        display: grid;
+        grid-template-areas: 
+        "brand brand brand brand"
+        "java python android javaScript"
+        "about about about about";
+    }
+    nav > div:first-of-type {
+        justify-content: center;
+        margin-left: 0rem;
+    }
+    nav > div:last-of-type {
+        justify-content: center;
+        margin-right: 0rem;
+    }
+}
+
+@media(max-width: 500px){
+    #nav-grid{
+        height: 240px;
+        display: grid;
+        grid-template-areas:
+        "brand"
+        "java"
+        "python"
+        "android"
+        "javaScript"
+        "about";
+    }
+}
+
+.nav-bg{
+    background-color: #3174b9;
+}
+
+.nav-text{
+    display: block;
+    color: #ffffff;
+    padding: 0.1em 0.5em;
+    border-top: #3174b9 1px solid;
+    border-bottom: #3174b9 2px solid;
+    border-left: #3174b9 1px solid;
+    border-right: #3174b9 1px solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.25em;
+}
+.nav-text:hover{
+    text-decoration: none;
+    color: rgb(220, 223, 236);
+    border-bottom: #ffffff 2px solid;
+}
+.nav-text:active{
+    text-decoration: none;
+    color: #6992bb;
+    border-top: #ffffff 1px solid;
+    border-bottom: #ffffff 2px solid;
+    border-left: #ffffff 1px solid;
+    border-right: #ffffff 1px solid;
+}
+
+.nav-img{
+    width: 8vw;
+    height: auto;
+    min-width: 85px;
+    border: #3174b9 1px solid;
+}
+.nav-img:hover{
+    border: #ffffff 1px solid;
+}
+.nav-img:active{
+    background: #6992bb;
+    border: #3174b9 1px solid;
+}

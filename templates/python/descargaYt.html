@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container"></div>
+<div class="card mt-5 mx-auto mb-5 w-75 customShadow">
+    <div class="card-header bg-gris-01 d-flex">
+        <img class="rounded-lg ml-auto" src="{{ url_for('static', filename='img/java/gesthotel_logo_512px.png') }}" width="auto" height="100px" alt="Card image">
+    </div>
+    
+    <div class="card-body">
+        <h3 class="card-title">GestHotel</h3>
+        <h5 class="card-text font-weight-bold mt-2">Version:<span class="font-weight-normal ml-2">v1.0</span></h5>
+        <h5 class="card-text font-weight-bold mt-2">Desarrollador:<a class="text-decoration-none text-info ml-3" href="{{ url_for('home') }}">rgilgil</a></p>
+        <h5 class="card-text font-weight-bold mt-2">Categoria:<span class="font-weight-normal ml-2">Python con Qt</span></h5>
+        <h5 class="card-text font-weight-bold mt-2">Descripcion:<span class="font-weight-normal ml-2">Aplicación realizada en python para la descarga de videos de youtube.</span></h5>
+        <h5 class="card-text font-weight-bold mt-4">Caracteristicas:</h5>  
+        <h4 class="font-weight-normal">
+            <!--Python-->
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Python</span>
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Pyqt</span>
+        </h4>
+        
+        <div class="row text-center text-lg-left pt-5">
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/python/screenshot_descargaYt_01.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/python/screenshot_descargaYt_01.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/python/screenshot_descargaYt_02.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/python/screenshot_descargaYt_02.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/python/screenshot_descargaYt_03.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/python/screenshot_descargaYt_03.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/python/screenshot_descargaYt_04.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/python/screenshot_descargaYt_04.jpg') }}" alt="">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/python/screenshot_descargaYt_05.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/python/screenshot_descargaYt_05.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/python/screenshot_descargaYt_06.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/python/screenshot_descargaYt_06.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/python/screenshot_descargaYt_07.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/python/screenshot_descargaYt_07.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/python/screenshot_descargaYt_08.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/python/screenshot_descargaYt_08.jpg') }}" alt="">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/python/screenshot_descargaYt_09.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/python/screenshot_descargaYt_09.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/python/screenshot_descargaYt_10.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/python/screenshot_descargaYt_10.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/java/screenshot_gesthotel_11.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/java/screenshot_gesthotel_11.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/java/screenshot_gesthotel_12.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/java/screenshot_gesthotel_12.jpg') }}" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card-footer bg-gris-01 p-4">
+        <a class="btn-lg btn-secondary bg-gris-04 text-decoration-none font-weight-bold mb-2 ml-5 float-right" href="{{ url_for('gestHotel') }}">Aplicacion</a>
+        <a class="btn-lg btn-secondary bg-gris-04 text-decoration-none font-weight-bold mb-2 float-right" href="{{ url_for('static', filename='img/logo_work_in_progress.png') }}">Codigo Fuente</a>
+              
+    </div>
+        
+    
+</div>
+
+{% endblock %}

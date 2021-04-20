@@ -1,0 +1,125 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container"></div>
+<div class="card mt-5 mx-auto mb-5 w-75 customShadow">
+    <div class="card-header bg-gris-01 d-flex">
+        <img class="rounded-lg ml-auto" src="{{ url_for('static', filename='img/java/gestaulas_logo_512px.png') }}" width="auto" height="100px" alt="Card image">
+    </div>
+    
+    <div class="card-body">
+        <h3 class="card-title">GestAulas</h3>
+        <h5 class="card-text font-weight-bold mt-2">Version:<span class="font-weight-normal ml-3"><v1 class="0">v1.0</v1></span></h5>
+        <h5 class="card-text font-weight-bold mt-2">Desarrollador:<a class="text-decoration-none text-info ml-3" href="{{ url_for('home') }}">rgilgil</a></p>
+        <h5 class="card-text font-weight-bold mt-2">Categoria:<span class="font-weight-normal ml-3">JavaWeb con Spring</span></h5>
+        <h5 class="card-text font-weight-bold mt-2">Descripcion:<span class="font-weight-normal ml-3">Aplicación java con spring para la gestion de las aulas de una academia.</span></h5>
+        <h5 class="card-text font-weight-bold mt-2">Usuario/Password:<span class="font-weight-normal ml-3">invitado</span></h5>
+        <h5 class="card-text font-weight-bold mt-4">Caracteristicas:</h5>  
+        <h4 class="font-weight-normal">
+            <!--Java-->
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Java</span>
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">J2EE</span>
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">JSP</span>
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">JUnit</span>
+            <!--Spring-->
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Spring</span>
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Spring Framework</span>
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Spring Boot</span>
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Spring Data JPA</span>
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Spring MVC</span>
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Spring Security</span>
+            <!--Ide-->
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Eclipse</span>
+            <!--Persistencia-->
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">MySQL</span>
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">SQL</span>
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Apache Tomcat</span>
+            <!--Repositorios-->
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Maven</span>
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Github</span>
+            <!--FrontEnd-->
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Html5</span>
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Css3</span>
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Bootstrap</span>
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">JavaScript</span>
+        </h4>
+        <h5 class="card-text font-weight-bold mt-4">Capturas de pantalla:</h5>  
+        <div class="row text-center text-lg-left pt-2">
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/java/screenshot_gestaulas_01.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/java/screenshot_gestaulas_01.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/java/screenshot_gestaulas_02.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/java/screenshot_gestaulas_02.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/java/screenshot_gestaulas_03.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/java/screenshot_gestaulas_03.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/java/screenshot_gestaulas_04.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/java/screenshot_gestaulas_04.jpg') }}" alt="">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/java/screenshot_gestaulas_05.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/java/screenshot_gestaulas_05.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/java/screenshot_gestaulas_06.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/java/screenshot_gestaulas_06.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/java/screenshot_gestaulas_07.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/java/screenshot_gestaulas_07.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/java/screenshot_gestaulas_08.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/java/screenshot_gestaulas_08.jpg') }}" alt="">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/java/screenshot_gestaulas_09.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/java/screenshot_gestaulas_09.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/java/screenshot_gestaulas_10.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/java/screenshot_gestaulas_10.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/java/screenshot_gestaulas_11.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/java/screenshot_gestaulas_11.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/java/screenshot_gestaulas_12.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/java/screenshot_gestaulas_12.jpg') }}" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card-footer bg-gris-01 p-4">
+        <a class="btn-lg btn-primary bg-navbar text-decoration-none font-weight-bold mb-2 ml-5 float-right" href="{{ url_for('gestAulas') }}">Aplicacion</a>
+        <a class="btn-lg btn-primary bg-navbar text-decoration-none font-weight-bold mb-2 float-right" href="{{ url_for('srcGestAulas') }}">Codigo Fuente</a>
+        
+        
+    </div>
+        
+    
+</div>
+
+{% endblock %}

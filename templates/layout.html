@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.png') }}"/>
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/customBg.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/customCards.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/customMargin.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/customPadding.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/customStyle.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/customNavbar.css') }}">
+
+    <!-- JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+
+    <title>Porfolio rgilgil</title>
+</head>
+<body>
+    <nav id="nav-grid">
+        <div class="grid-flex">
+            <a href="{{ url_for('home') }}">
+                <img class="nav-img" src="{{ url_for('static', filename='img/rgg_logo.png') }}">
+            </a>
+        </div>
+        <div class="grid-flex">
+            <a class="nav-text" href="{{ url_for('java') }}">Java</a>
+        </div>
+        
+        <div class="grid-flex">
+            <a class="nav-text" href="{{ url_for('python') }}">Python</a>
+        </div>
+        
+        <div class="grid-flex">
+            <a class="nav-text" href="{{ url_for('android') }}">Android</a>
+        </div>
+        
+        <div class="grid-flex">
+            <a class="nav-text" href="{{ url_for('javaScript') }}">JavaScript</a>    
+        </div>
+        
+        <div class="grid-flex">
+            <a href="{{ url_for('about') }}">
+                <img class="nav-img" src="{{ url_for('static', filename='img/about_logo.png') }}">
+            </a>
+        </div>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
