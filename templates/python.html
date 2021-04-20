@@ -2,11 +2,29 @@
 
 {% block content %}
 
-<div class="contenedor w-75 bg-info">
+<main id="python-grid">
+    <!-- Card usuario -->
+    <div class="grid-flex mainCard">
+        <a class="noDeco" href="{{ url_for('porfolio') }}">
+            <img class="mainCard-img" src="{{ url_for('static', filename='img/python/porfolio_logo_512px.png') }}">
+            <div class="mainCard-text">
+                <p>Porfolio</p>
+            </div>
+        </a>
+        
+    </div>
+    <!-- Card usuario -->
+    <!-- Card usuario -->
+    <div class="grid-flex mainCard">
+        <a class="noDeco" href="{{ url_for('descargaYoutube') }}">
+            <img class="mainCard-img" src="{{ url_for('static', filename='img/python/descarga_youtube_logo_512px.png') }}">
+            <div class="mainCard-text">
+                <p>DescargaYt</p>
+            </div>
+        </a>
+    </div>
+    <!-- Card usuario -->
 
-
-
-
-</div>
+</main>
 
 {% endblock %}

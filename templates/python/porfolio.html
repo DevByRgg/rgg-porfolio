@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container"></div>
+<div class="card mt-5 mx-auto mb-5 w-75 customShadow">
+    <div class="card-header bg-gris-01 d-flex">
+        <img class="rounded-lg ml-auto" src="{{ url_for('static', filename='img/python/porfolio_logo_512px.png') }}" width="auto" height="100px" alt="Card image">
+    </div>
+    
+    <div class="card-body">
+        <h3 class="card-title">Porfolio</h3>
+        <h5 class="card-text font-weight-bold mt-2">Version:<span class="font-weight-normal ml-3"><v1 class="0">v2.1</v1></span></h5>
+        <h5 class="card-text font-weight-bold mt-2">Desarrollador:<a class="text-decoration-none text-info ml-3" hre="{{ url_for('home') }}">rgilgil</a></p>
+        <h5 class="card-text font-weight-bold mt-2">Categoria:<span class="font-weight-normal ml-3">Python</span></h5>
+        <h5 class="card-text font-weight-bold mt-2">Descripcion:<span class="font-weight-normal ml-3">Web python con flask de mi porfolio personal.</span></h5>
+        <h5 class="card-text font-weight-bold mt-4">Caracteristicas:</h5>  
+        <h4 class="font-weight-normal">
+            <!--Python-->
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Python</span>
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Flask</span>
+            <!--Editor-->
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Vscode</span>
+            <!--Repositorios-->
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Github</span>
+            <!--FrontEnd-->
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Html5</span>
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Css3</span>
+            <span class="badge badge-secondary bg-gris-04 mr-2 mt-3">Bootstrap</span>
+        </h4>
+        <h5 class="card-text font-weight-bold mt-4">Capturas de pantalla:</h5>  
+        <div class="row text-center text-lg-left pt-2">
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/python/screenshot_porfolio_01.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/python/screenshot_porfolio_01.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/python/screenshot_porfolio_02.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/python/screenshot_porfolio_02.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/python/screenshot_porfolio_03.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/python/screenshot_porfolio_03.jpg') }}" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-6">  
+                <a href="{{ url_for('static', filename='img/python/screenshot_porfolio_04.jpg') }}" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="{{ url_for('static', filename='img/python/screenshot_porfolio_04.jpg') }}" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card-footer bg-gris-01 p-4">
+        <a class="btn-lg btn-primary bg-navbar text-decoration-none font-weight-bold mb-2 ml-5 float-right" href="{{ url_for('gestAulas') }}">Aplicacion</a>
+        <a class="btn-lg btn-primary bg-navbar text-decoration-none font-weight-bold mb-2 float-right" href="{{ url_for('srcGestAulas') }}">Codigo Fuente</a>
+        
+        
+    </div>
+        
+    
+</div>
+
+{% endblock %}

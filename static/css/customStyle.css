@@ -7,6 +7,10 @@
     text-decoration: none;
 }
 
+/*_____________________________________________*/
+/*__Python-grid________________________________*/
+/*_____________________________________________*/
+
 #java-grid{
     display: grid;
     grid-gap: 5vw;
@@ -33,6 +37,41 @@
         "aulas"
     }
 }
+
+/*_____________________________________________*/
+/*__Python-grid________________________________*/
+/*_____________________________________________*/
+
+#python-grid{
+    display: grid;
+    grid-gap: 5vw;
+    grid-auto-columns: minmax(100px, 200px);
+    /*Definimos la ordenacion de las areas*/
+    grid-template-areas: 
+        "porfolio descargaYoutube";
+    
+    background-color: #ffffff;
+    justify-content: center;
+    margin-top: 2vw;
+}
+#python-grid > div:first-of-type{
+     grid-area: porfolio;
+}
+#python-grid > div:last-of-type{
+    grid-area: descargaYoutube;
+}
+@media(max-width: 500px){
+    #python-grid{
+        display: grid;
+        grid-template-areas: 
+        "descargaYoutube"
+        "porfolio"
+    }
+}
+
+/*_____________________________________________*/
+/*__Android-grid_______________________________*/
+/*_____________________________________________*/
 
 #android-grid{
     display: grid;

@@ -13,8 +13,7 @@ def java():
 
 @app.route('/python')
 def python():
-    return render_template('wop.html') #En proceso, se sube cuando este acabada
-    #return render_template('python.html')
+    return render_template('python.html')
     
 @app.route('/android')
 def android():
@@ -60,9 +59,22 @@ def srcGestAulas():
 
 
 #---------------PYTHON-------------
+    #---Porfolio-------------------
+@app.route('/python/porfolio')
+def porfolio():
+    return render_template('python/porfolio.html')
+
+@app.route('/python/porfolio/app')
+def appPorfolio():
+    return redirect('https://rgg-porfolio.herokuapp.com/')
+
+@app.route('/python/porfolio/src')
+def srcPorfolio():
+    return redirect('https://github.com/DevByRgg/rgg-porfolio')
+
     #---DescargaYt-----------------
-@app.route('/python/descargaYt')
-def descargaYt():
+@app.route('/python/descargaYoutube')
+def descargaYoutube():
     return render_template('wop.html')  #En proceso, se sube cuando este acabada
     #return render_template('python/descargaYt.html')
 
