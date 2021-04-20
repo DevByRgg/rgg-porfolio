@@ -42,8 +42,7 @@ def gestHotel():
 
 @app.route('/java/hotel/src') 
 def srcGestHotel():
-    return render_template('wop.html')  #En proceso, se sube cuando este acabada
-    #return redirect('http://')
+    return redirect('https://github.com/DevByRgg/rgg-gesthotel')
 
     
     #---GestAulas------------------
@@ -57,8 +56,7 @@ def gestAulas():
 
 @app.route('/java/aulas/src')
 def srcGestAulas():
-    return render_template('wop.html')  #En proceso, se sube cuando este acabada
-    #return redirect('http://')
+    return redirect('https://github.com/DevByRgg/rgg-gestaulas')
 
 
 #---------------PYTHON-------------
