@@ -1,6 +1,6 @@
 /*Definimos GRID container*/
 #nav-grid{
-    height: 40px;
+    height: 60px;
     display: grid;
     
     /*Posicion de las areas*/
