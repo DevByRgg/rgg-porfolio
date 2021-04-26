@@ -1,12 +1,65 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://localhost:5000/about -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="http://localhost:5000/static/img/favicon.png">
 
-{% block content %}
+    <!-- CSS-->
+    <link rel="stylesheet" href="./Porfolio rgilgil_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Porfolio rgilgil_files/customBg.css">
+    <link rel="stylesheet" href="./Porfolio rgilgil_files/customCards.css">
+    <link rel="stylesheet" href="./Porfolio rgilgil_files/customMargin.css">
+    <link rel="stylesheet" href="./Porfolio rgilgil_files/customGrid.css">
+    <link rel="stylesheet" href="./Porfolio rgilgil_files/customNavbar.css">
+    <link rel="stylesheet" href="./Porfolio rgilgil_files/customStyle.css">
+
+    <!-- JavaScript-->
+    <script src="./Porfolio rgilgil_files/jquery-3.5.1.slim.min.js.descarga"></script>
+    <script src="./Porfolio rgilgil_files/popper.min.js.descarga"></script>
+    <script src="./Porfolio rgilgil_files/bootstrap.min.js.descarga"></script>
+
+    <title>Porfolio rgilgil</title>
+</head>
+<body>
+    <nav id="nav-grid">
+        <div class="grid-flex">
+            <a href="http://localhost:5000/">
+                <img class="nav-img nav-img-logo" src="./Porfolio rgilgil_files/rgg_logo.png">
+            </a>
+        </div>
+        <div class="grid-flex">
+            <a class="nav-text" href="http://localhost:5000/java">Java</a>
+        </div>
+        
+        <div class="grid-flex">
+            <a class="nav-text" href="http://localhost:5000/python">Python</a>
+        </div>
+        
+        <div class="grid-flex">
+            <a class="nav-text" href="http://localhost:5000/android">Android</a>
+        </div>
+        
+        <div class="grid-flex">
+            <a class="nav-text" href="http://localhost:5000/javaScript">JavaScript</a>    
+        </div>
+        
+        <div class="grid-flex">
+            <a href="http://localhost:5000/about">
+                <img class="nav-img" src="./Porfolio rgilgil_files/about_logo.png">
+            </a>
+        </div>
+    </nav>
+
+    
 
 <div class="d-flex justify-content-center mt-3">
     <h2 class="custom-color-nav font-italic ">Curriculum Vitae</h2>
 </div>
 
-<div class="container rounded">
+<div class="container w-75 rounded">
     <div id="accordion">
         <!--Pestaña de Datos personales-->
         <div class="card customShadow">
@@ -21,18 +74,18 @@
             <div id="collapseUno" class="collapse" aria-labelledby="headingUno" data-parent="#accordion">
                 <div class="card-body">
                     <div class="flexcont borde shadow">
-                        <div class="p-3">
-                            <p class="texto text-secondary texto-nombre cml-3">Rafael Gil Gil </p>
-                            <p class="texto cml-5">Fecha de nacimiento: <span class="text-secondary texto-datos">03/05/1978</span></p>
-                            <p class="texto cml-5">D.N.I.:<span class="text-secondary texto-datos">46877512Q</span></p>
-                            <p class="texto cml-5">Dirección:<span class="text-secondary texto-datos">Av. Monasterio de El Escorial, 24</span></p>
-                            <p class="texto cml-5">Codigo Postal:<span class="text-secondary texto-datos">28049 Madrid</span></p>
-                            <p class="texto cml-5">Email:<span class="text-secondary texto-datos">gil.gil.rafael@gmail.com</span></p>
-                            <p class="texto cml-5">Telefono:<span class="text-secondary texto-datos">609 22 52 39</span></p>    
+                        <div class="p-3 cml-3">
+                            <p class="texto text-secondary texto-nombre">Rafael Gil Gil </p>
+                            <p class="texto">Fecha de nacimiento: <span class="text-secondary texto-datos">03/05/1978</span></p>
+                            <p class="texto">D.N.I.:<span class="text-secondary texto-datos">46877512Q</span></p>
+                            <p class="texto">Dirección:<span class="text-secondary texto-datos">Av. Monasterio de El Escorial, 24</span></p>
+                            <p class="texto">Codigo Postal:<span class="text-secondary texto-datos">28049 Madrid</span></p>
+                            <p class="texto">Email:<span class="text-secondary texto-datos">gil.gil.rafael@gmail.com</span></p>
+                            <p class="texto">Telefono:<span class="text-secondary texto-datos">609 22 52 39</span></p>    
                         </div>
             
                         <div class="p-3">
-                            <img class="carnet" src="{{ url_for('static', filename='img/about/rgg_foto_carnet.png') }}" alt="foto carnet">
+                            <img class="carnet" src="./Porfolio rgilgil_files/rgg_foto_carnet.png" alt="foto carnet">
                         </div>    
                     </div>    
                 </div>
@@ -62,7 +115,7 @@
                             <p class="texto texto-empresa cml-3">Noviembre 2016 - Junio 2019 (2 años y 7 meses)</p>
                         </div>
                         <div class="p-3">
-                            <img class="carnet cml-3" src="{{ url_for('static', filename='img/about/logo_gfi_512px.png') }}" alt="logo empresa">
+                            <img class="carnet cml-3" src="./Porfolio rgilgil_files/logo_gfi_512px.png" alt="logo empresa">
                         </div>
                         <!-------------------->    
                         <div class="detalles p-3">
@@ -74,7 +127,7 @@
                             <p class="texto texto-exp cml-5">Chequeo del nodo</p>
                         </div>
                         <!-------------------->
-                        <div class="detalles pl-3 pr-3 pb-3">
+                        <div class="p-3">
                             <span class="badge badge-custom bg-gris-04 cml-3 mt-3">Windows</span>
                             <span class="badge badge-custom bg-gris-04 cml-3 mt-3">Linux</span>
                             <span class="badge badge-custom bg-gris-04 cml-3 mt-3">Oracle DBA</span>
@@ -96,7 +149,7 @@
                             <p class="texto texto-empresa cml-3">Diciembre 2009 - Noviembre 2016 (6 años y 11 meses)</p>
                         </div>
                         <div class="p-3">
-                            <img class="carnet cml-3" src="{{ url_for('static', filename='img/about/logo_autonomo_512px.png') }}" alt="logo empresa">
+                            <img class="carnet cml-3" src="./Porfolio rgilgil_files/logo_autonomo_512px.png" alt="logo empresa">
                         </div>    
                         <!-------------------->
                         <div class="detalles p-3">
@@ -107,7 +160,7 @@
                             <p class="texto texto-exp cml-5">Resolución de incidencias tanto presencial como en remoto.</p>
                         </div>
                         <!-------------------->
-                        <div class="detalles pl-3 pr-3 pb-3">
+                        <div class="p-3">
                             <span class="badge badge-custom bg-gris-04 cml-3 mt-3">Windows</span>
                             <span class="badge badge-custom bg-gris-04 cml-3 mt-3">Linux</span>
                             <span class="badge badge-custom bg-gris-04 cml-3 mt-3">Instalación de software</span>
@@ -137,7 +190,7 @@
                             <p class="texto texto-empresa cml-3">Noviembre 1999 - Junio 2000  (7 meses)</p>
                         </div>
                         <div class="p-3">
-                            <img class="carnet cml-3" src="{{ url_for('static', filename='img/about/logo_uem_512px.png') }}" alt="logo empresa">
+                            <img class="carnet cml-3" src="./Porfolio rgilgil_files/logo_uem_512px.png" alt="logo empresa">
                         </div>    
                         <!-------------------->
                         <div class="detalles p-3">
@@ -145,7 +198,7 @@
                             <p class="texto texto-exp cml-5">Configuración y mantenimiento de impresoras y plotters.</p>
                         </div>
                         <!-------------------->
-                        <div class="detalles pl-3 pr-3 pb-3">
+                        <div class="p-3">
                             <span class="badge badge-custom bg-gris-04 cml-3 mt-3">Windows</span>
                             <span class="badge badge-custom bg-gris-04 cml-3 mt-3">AutoCad</span>
                             <span class="badge badge-custom bg-gris-04 cml-3 mt-3">Instalación de software</span>
@@ -162,6 +215,11 @@
         <!--Fin pestaña de Experiencia-->
         <!--------------------------------------------------------------------------------------->
         <!--------------------------------------------------------------------------------------->
+        
+        
+        
+        
+        
         <!--Pestaña de Estudios-->
         <div class="card customShadow">
             <!--Cabecera-->
@@ -172,109 +230,106 @@
             </div>
             <!--Fin cabecera-->
             <!--Cuerpo-->
-            <div id="collapseTres" class="collapse" aria-labelledby="headingTres" data-parent="#accordion">
-                <!--Ficha Estudios 01-->
+            <div id="collapseTres" class="collapse show" aria-labelledby="headingTres" data-parent="#accordion" style="">
+                <!--Ficha Exp 01-->
                 <div class="card-body">
-                    <div class="flexcont borde shadow tag">
-                        <div class="w-100 pt-3 pl-3 pr-3">
-                            <span class="text-secondary cml-3 mb-0">Estudios reglados</span>
+                    <div class="flexcont borde shadow">
+                        <div class="w-100 pt-3 pl-3">
+                            <p class="text-secondary cml-3 mb-0" title="Estudios universitarios">Estudios Reglados</p>
                         </div>
                         <!-------------------->    
                         <div class="detalles">
                             <div class="p-3">
                                 <span class="badge badge-estudios badge-info cml-3 pl-3 pr-3" title="Estudios universitarios">SUP</span>
                             </div>
-                            <div class="w-75 p-3 cml-3">
+                            <div class="w-75 pt-3 pr-3 pb-3 float-left">
                                 <p class="texto text-secondary texto-puesto">Arquitecto</p>
                                 <p class="texto texto-empresa">Universidad Alfonso X El Sabio</p>
                                 <p class="texto texto-empresa">Septiembre 1996 - Julio 2012 (a falta del Proyecto Fin de Carrera)</p>
                             </div>
                         </div>
                         <!-------------------->
-                        <div class="detalles">
-                            <div class="p-3">
-                                <span class="badge badge-estudios badge-info cml-3 pl-3 pr-3" title="Bachillerato">BTO</span>
+                        <div class="">
+                            <div class="w-25 p-3">
+                                <span class="badge badge-estudios badge-info cml-3 pl-3 pr-3" title="Estudios universitarios">SUP</span>
                             </div>
-                            <div class="w-75 p-3 cml-3">
-                                <p class="texto text-secondary texto-puesto">Bachillerato</p>
-                                <p class="texto texto-empresa">Colegio Zurbarán</p>
-                                <p class="texto texto-empresa">Septiembre 1993 - Junio 1996</p>
+                            <div class="w-75 pt-3 pr-3 pb-3 float-left">
+                                <p class="texto text-secondary texto-puesto">Arquitecto</p>
+                                <p class="texto texto-empresa">Universidad Alfonso X El Sabio</p>
+                                <p class="texto texto-empresa">Septiembre 1996 - Julio 2012 (a falta del Proyecto Fin de Carrera)</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--Fin ficha Estudios 01-->
+                <!--Fin ficha Exp 01-->
+                
+                
                 <!--Ficha Estudios 02-->
                 <div class="card-body pt-0">
                     <div class="flexcont borde shadow tag">
-                        <div class="w-100 pt-3 pl-3 pr-3">
-                            <span class="text-secondary cml-3 mb-0">Estudios no reglados</span>
+                        <div class="pt-3 pl-3 pb-3">
+                            <span class="badge badge-estudios badge-info cml-3 pl-3 pr-3" title="Bachillerato">BTO</span>
                         </div>
-                        <!-------------------->    
-                        <div class="detalles">
-                            <div class="p-3">
-                                <span class="badge badge-estudios badge-secondary cml-3 pl-3 pr-3" title="Certificado profesionalidad">CER</span>
-                            </div>
-                            <div class="w-75 p-3 cml-3">
-                                <p class="texto text-secondary texto-puesto">Programación de sistemasinformáticos (IFCT0609)</p>
-                                <p class="texto texto-empresa">Cice</p>
-                                <p class="texto texto-empresa">Enero 2020 - Septiembre 2020</p>
-                            </div>
+                        <div class="w-85 p-3">
+                            <p class="texto text-secondary texto-puesto cml-3">Bachillerato</p>
+                            <p class="texto texto-empresa cml-3">Colegio Zurbarán</p>
+                            <p class="texto texto-empresa cml-3">Septiembre 1993 - Junio 1996</p>
                         </div>
-                        <!-------------------->
-                        <div class="detalles">
-                            <div class="p-3">
-                                <span class="badge badge-estudios badge-secondary cml-3 pl-3 pr-3" title="Curso">CUR</span>
-                            </div>
-                            <div class="w-75 p-3 cml-3">
-                                <p class="texto text-secondary texto-puesto">Administración avanzada de bases de datos ORACLE</p>
-                                <p class="texto texto-empresa">CFTIC (Oracle University)</p>
-                                <p class="texto texto-empresa">Septiembre 2016 - Diciembre 2016</p>
-                            </div>
+                    </div>
+                </div>
+                <!--Fin ficha Estudios 02-->
+                <!--Ficha Estudios 02-->
+                <div class="card-body pt-0">
+                    <div class="flexcont borde shadow tag">
+                        <div class="pt-3 pl-3 pb-3">
+                            <span class="badge badge-estudios badge-secondary cml-3 pl-3 pr-3" title="Certificado de profesionalidad">PRO</span>
                         </div>
-                        <!-------------------->
-                        <div class="detalles">
-                            <div class="p-3">
-                                <span class="badge badge-estudios badge-secondary cml-3 pl-3 pr-3" title="Curso">CUR</span>
-                            </div>
-                            <div class="w-75 p-3 cml-3">
-                                <p class="texto text-secondary texto-puesto">Administración de bases de datos ORACLE</p>
-                                <p class="texto texto-empresa">CFTIC (Oracle University)</p>
-                                <p class="texto texto-empresa">Febrero 2016 - Mayo 2016</p>
-                            </div>
+                        <div class="w-85 pt-3 pr-3 pb-3">
+                            <p class="texto text-secondary texto-puesto cml-3">Programación de sistemas informáticos (IFCT0609)</p>
+                            <p class="texto texto-empresa cml-3">Cice</p>
+                            <p class="texto texto-empresa cml-3">Enero 2020 - Enero 2021</p>
                         </div>
-                        <!-------------------->
-                        <div class="detalles">
-                            <div class="p-3">
-                                <span class="badge badge-estudios badge-secondary cml-3 pl-3 pr-3" title="Curso">CUR</span>
-                            </div>
-                            <div class="w-75 p-3 cml-3">
-                                <p class="texto text-secondary texto-puesto">Fundamentos de administración de bases de datos ORACLE</p>
-                                <p class="texto texto-empresa">CFTIC (Oracle University)</p>
-                                <p class="texto texto-empresa">Septiembre 2015 - Diciembre 2015</p>
-                            </div>
+                    </div>
+                </div>
+                <!--Fin ficha Estudios 02-->
+                <!--Ficha Estudios 02-->
+                <div class="card-body pt-0">
+                    <div class="flexcont borde shadow tag">
+                        <div class="pt-3 pl-3 pb-3">
+                            <span class="badge badge-estudios badge-info cml-3 pl-3 pr-3" title="Curso">CUR</span>
                         </div>
-                        <!-------------------->
-                        <div class="detalles">
-                            <div class="p-3">
-                                <span class="badge badge-estudios badge-secondary cml-3 pl-3 pr-3" title="Curso">CUR</span>
-                            </div>
-                            <div class="w-75 p-3 cml-3">
-                                <p class="texto text-secondary texto-puesto">Administrador Basis - Nivel inicial</p>
-                                <p class="texto texto-empresa">CvSoft</p>
-                                <p class="texto texto-empresa">Junio 2015 - Agosto 2015</p>
-                            </div>
+                        <div class="w-85 pt-3 pr-3 pb-3">
+                            <p class="texto text-secondary texto-puesto cml-3">Administración Avanzada de Base de Datos ORACLE (Oracle University)</p>
+                            <p class="texto texto-empresa cml-3">CFTIC</p>
+                            <p class="texto texto-empresa cml-3">Septiembre 2016 - Diciembre 2016 </p>
                         </div>
-                        <!-------------------->
-                        <div class="detalles">
-                            <div class="p-3">
-                                <span class="badge badge-estudios badge-secondary cml-3 pl-3 pr-3" title="Curso">CUR</span>
-                            </div>
-                            <div class="w-75 p-3 cml-3">
-                                <p class="texto text-secondary texto-puesto">Consultor Sap Logistica y Materiales (MM)</p>
-                                <p class="texto texto-empresa">Centro formacion valengoya</p>
-                                <p class="texto texto-empresa">Enero 2015 - Junio 2015</p>
-                            </div>
+                    </div>
+                </div>
+                <!--Fin ficha Estudios 02-->
+                <!--Ficha Estudios 02-->
+                <div class="card-body pt-0">
+                    <div class="flexcont borde shadow tag">
+                        <div class="pt-3 pl-3 pb-3">
+                            <span class="badge badge-estudios badge-info cml-3 pl-3 pr-3" title="Curso">CUR</span>
+                        </div>
+                        <div class="w-85 p-3">
+                            <p class="texto text-secondary texto-puesto cml-3">Bachillerato</p>
+                            <p class="texto texto-empresa cml-3">Colegio Zurbarán</p>
+                            <p class="texto texto-empresa cml-3">Septiembre 1993 - Junio 1996 (2 años y 9 meses)</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Fin ficha Estudios 02-->
+                <!--Ficha Estudios 02-->
+                <div class="card-body pt-0">
+                    <div class="flexcont borde shadow tag">
+                        <div class="pt-3 pl-3 pb-3">
+                            <h1 class="badge badge-estudios badge-info cml-3 pl-3 pr-3" title="Bachillerato">BTO</h1>
+                        </div>
+                        <div class="w-85 pt-3 pr-3 pb-3">
+                            <p class="texto text-secondary texto-puesto cml-3">Bachillerato</p>
+                            <p class="texto texto-empresa cml-3">Colegio Zurbarán</p>
+                            <p class="texto texto-empresa cml-3">Septiembre 1993 - Junio 1996 (2 años y 9 meses)</p>
                         </div>
                     </div>
                 </div>
@@ -283,8 +338,12 @@
             <!--Fin cuerpo-->
         </div>
         <!--Fin pestaña de Estudios-->
-        <!--------------------------------------------------------------------------------------->
-        <!--------------------------------------------------------------------------------------->
+
+
+
+
+
+
         <!--Pestaña de Conocimientos-->
         <div class="card customShadow">
             <!--Cabecera-->
@@ -397,7 +456,7 @@
             <div id="collapseCinco" class="collapse" aria-labelledby="headingCinco" data-parent="#accordion">
                 <div class="card-body">
                     <div class="flexcont borde shadow">
-                        <div class="w-100 table-responsive p-3 cml-3 cmr-3">
+                        <div class="w-100 p-3 cml-3 cmr-3">
                             <table class="table texto mt-0">
                                 <thead>
                                   <tr>
@@ -444,10 +503,10 @@
             <!--Fin cabecera-->
             <!--Cuerpo-->
             <div id="collapseSeis" class="collapse" aria-labelledby="headingSeis" data-parent="#accordion">
-                <!--Ficha Otros 01-->
+                <!--Ficha Exp 01-->
                 <div class="card-body">
                     <div class="flexcont borde shadow">
-                        <div class="cml-3 p-3">
+                        <div class="p-3">
                             <p class="texto mt-0">Carnet conducir: <span class="text-secondary texto-datos">Tipo B</span></p>
                             <p class="texto">Vehiculo propio:<span class="text-secondary texto-datos">Si</span></p>
                             <p class="texto">Permiso de trabajo:<span class="text-secondary texto-datos">Unión Europea</span></p>
@@ -456,13 +515,27 @@
                         </div>
                     </div>
                 </div>
-                <!--Fin ficha Otros 01-->
+                <!--Fin ficha Exp 01-->
             </div>
             <!--Fin cuerpo-->
         </div>
-        <!--Fin pestaña de Otros datos-->
+        <!--Fin pestaña de Estudios-->
+
+
+
+
+        Falta añadir datos a la pestaña estudios.
+
+
+
+
+
+
     </div>
+
 </div>
 
 
-{% endblock %}
+
+
+</body></html>

@@ -26,7 +26,7 @@ def javaScript():
 
 @app.route('/about')
 def about():
-    return render_template('wop.html') #En proceso, se sube cuando este acabada
+    return render_template('about.html') #En proceso, se sube cuando este acabada
     #return render_template('about.html')
 
 #---------------JAVA---------------

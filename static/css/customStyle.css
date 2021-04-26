@@ -1,0 +1,98 @@
+.flexcont{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.custom-color-nav{
+    color: #3174b9;
+}
+
+.boton{
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+    border: 0px;
+}
+.boton:hover{
+    color: #6992bb;
+}
+
+.texto{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.25;
+    font-size: 1.25rem;
+    font-weight: lighter;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.texto-datos{
+    font-weight: normal;
+    margin-left: 1rem;
+}
+
+.texto-nombre{
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.texto-puesto{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.texto-empresa{
+    color: #cbccd1;
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-top: .2rem;
+}
+
+.texto-exp{
+    width: 80%;
+    margin-top: .5rem;
+}
+
+.detalles{
+    display: flex;
+    width: 100%;
+    border-top: #cbccd1 1px solid;
+    flex-wrap: wrap;
+    justify-content: normal;
+}
+
+.borde{
+    border: #cbccd1 1px groove;
+    border-radius: 10px;
+}
+.carnet{
+    width: 80px;
+    border: #cbccd1 0.5px solid;
+    border-radius: 5px;
+}
+
+.badge-custom{
+    color: #ffffff;
+    font-size: 100%;
+}
+.badge-estudios{
+    border-radius: 10rem;
+    font-size: 125%;
+
+}
+
+.card-header-custom{
+    padding: 0.25rem 0.75rem;
+}
+
+.tag{
+    justify-content: normal;
+    align-items: center;
+}

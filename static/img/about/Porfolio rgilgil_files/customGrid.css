@@ -1,0 +1,132 @@
+.grid-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.noDeco:hover{
+    text-decoration: none;
+}
+
+/*_____________________________________________*/
+/*__Python-grid________________________________*/
+/*_____________________________________________*/
+
+#java-grid{
+    display: grid;
+    grid-gap: 5vw;
+    grid-auto-columns: minmax(100px, 200px);
+    /*Definimos la ordenacion de las areas*/
+    grid-template-areas: 
+        "hotel aulas";
+    
+    background-color: #ffffff;
+    justify-content: center;
+    margin-top: 2vw;
+}
+#java-grid > div:first-of-type{
+     grid-area: hotel;
+}
+#java-grid > div:last-of-type{
+    grid-area: aulas;
+}
+@media(max-width: 500px){
+    #java-grid{
+        display: grid;
+        grid-template-areas: 
+        "hotel"
+        "aulas"
+    }
+}
+
+/*_____________________________________________*/
+/*__Python-grid________________________________*/
+/*_____________________________________________*/
+
+#python-grid{
+    display: grid;
+    grid-gap: 5vw;
+    grid-auto-columns: minmax(100px, 200px);
+    /*Definimos la ordenacion de las areas*/
+    grid-template-areas: 
+        "porfolio descargaYoutube";
+    
+    background-color: #ffffff;
+    justify-content: center;
+    margin-top: 2vw;
+}
+#python-grid > div:first-of-type{
+     grid-area: porfolio;
+}
+#python-grid > div:last-of-type{
+    grid-area: descargaYoutube;
+}
+@media(max-width: 500px){
+    #python-grid{
+        display: grid;
+        grid-template-areas: 
+        "descargaYoutube"
+        "porfolio"
+    }
+}
+
+/*_____________________________________________*/
+/*__Android-grid_______________________________*/
+/*_____________________________________________*/
+
+#android-grid{
+    display: grid;
+    grid-gap: 5vw;
+    grid-auto-columns: minmax(100px, 200px);
+    /*Definimos la ordenacion de las areas*/
+    grid-template-areas: 
+        "fitMed gestAulasMobile gesTension";
+    
+    background-color: #ffffff;
+    justify-content: center;
+    margin-top: 2vw;
+}
+#android-grid > div:first-of-type{
+     grid-area: fitMed;
+}
+#android-grid > div:nth-child(2){
+    grid-area: gestAulasMobile;
+}
+#android-grid > div:last-of-type{
+    grid-area: gesTension;
+}
+@media(max-width: 800px){
+    #android-grid{
+        display: grid;
+        grid-template-areas: 
+        "fitMed"
+        "gestAulasMobile"
+        "gesTension"
+    }
+}
+
+/*_____________________________________________*/
+/*__JavaScript-grid____________________________*/
+/*_____________________________________________*/
+
+
+
+
+
+
+
+
+
+
+.imgGris{
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+filter: grayscale(100%); 
+}
+
+
+
+.customShadow{
+    box-shadow: 10px 10px 5px 0px #b4b4b9bf;
+}
