@@ -66,6 +66,7 @@
     border-top: #cbccd1 1px solid;
     flex-wrap: wrap;
     justify-content: normal;
+    align-items: center;
 }
 
 .borde{
