@@ -95,14 +95,11 @@ def srcFitMed():
     #---GestAulas-Mobile-----------
 @app.route('/android/gestAulasMobile')
 def gestAulasMobile():
-    return render_template('android/gestAulasMobile.html')  #En proceso, se sube cuando este acabada
-    #return render_template('android/gestAulasMobile.html')
+    return render_template('android/gestAulasMobile.html')
 
 @app.route('/android/gestAulasMobile/src')
 def srcGestAulasMobile():
-    return render_template('wop.html')  #En proceso, se sube cuando este acabada
-    #return redirect('http://')
-
+    return redirect('https://github.com/DevByRgg/rgg-gestaulasmobile')
 
     #---GesTension-----------------
 @app.route('/android/gesTension')
