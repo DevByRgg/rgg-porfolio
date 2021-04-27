@@ -6,6 +6,8 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+
+
 #---------------HOME---------------
 @app.route('/java')
 def java():
@@ -26,8 +28,9 @@ def javaScript():
 
 @app.route('/about')
 def about():
-    return render_template('about.html') #En proceso, se sube cuando este acabada
-    #return render_template('about.html')
+    return render_template('about.html')
+
+
 
 #---------------JAVA---------------
     #---GestHotel------------------
@@ -42,6 +45,7 @@ def gestHotel():
 @app.route('/java/hotel/src') 
 def srcGestHotel():
     return redirect('https://github.com/DevByRgg/rgg-gesthotel')
+
 
     
     #---GestAulas------------------
@@ -58,6 +62,7 @@ def srcGestAulas():
     return redirect('https://github.com/DevByRgg/rgg-gestaulas')
 
 
+
 #---------------PYTHON-------------
     #---Porfolio-------------------
 @app.route('/python/porfolio')
@@ -72,9 +77,21 @@ def appPorfolio():
 def srcPorfolio():
     return redirect('https://github.com/DevByRgg/rgg-porfolio')
 
+
+
     #---DescargaYt-----------------
 @app.route('/python/descargaYoutube')
 def descargaYoutube():
+    return render_template('wop.html')  #En proceso, se sube cuando este acabada
+    #return render_template('python/descargaYt.html')
+
+@app.route('/python/descargaYoutube/app')
+def appDescargaYoutube():
+    return render_template('wop.html')  #En proceso, se sube cuando este acabada
+    #return render_template('python/descargaYt.html')
+    
+@app.route('/python/descargaYoutube/src')
+def srcDescargaYoutube():
     return render_template('wop.html')  #En proceso, se sube cuando este acabada
     #return render_template('python/descargaYt.html')
 
@@ -100,6 +117,7 @@ def gestAulasMobile():
 @app.route('/android/gestAulasMobile/src')
 def srcGestAulasMobile():
     return redirect('https://github.com/DevByRgg/rgg-gestaulasmobile')
+
 
     #---GesTension-----------------
 @app.route('/android/gesTension')
