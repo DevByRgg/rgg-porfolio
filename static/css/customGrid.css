@@ -64,8 +64,8 @@
     #python-grid{
         display: grid;
         grid-template-areas: 
-        "descargaYoutube"
         "porfolio"
+        "descargaYoutube"
     }
 }
 
@@ -79,7 +79,8 @@
     grid-auto-columns: minmax(100px, 200px);
     /*Definimos la ordenacion de las areas*/
     grid-template-areas: 
-        "fitMed gestAulasMobile gesTension";
+        "fitMed gestAulasMobile";
+        /*"fitMed gestAulasMobile gesTension";*/
     
     background-color: #ffffff;
     justify-content: center;
@@ -91,16 +92,18 @@
 #android-grid > div:nth-child(2){
     grid-area: gestAulasMobile;
 }
+/*
 #android-grid > div:last-of-type{
     grid-area: gesTension;
 }
+*/
 @media(max-width: 800px){
     #android-grid{
         display: grid;
         grid-template-areas: 
         "fitMed"
         "gestAulasMobile"
-        "gesTension"
+        /*"gesTension"*/
     }
 }
 
