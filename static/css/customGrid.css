@@ -48,7 +48,8 @@
     grid-auto-columns: minmax(100px, 200px);
     /*Definimos la ordenacion de las areas*/
     grid-template-areas: 
-        "porfolio descargaYoutube";
+        "porfolio";
+        /*"porfolio descargaYoutube";*/
     
     background-color: #ffffff;
     justify-content: center;
@@ -57,15 +58,17 @@
 #python-grid > div:first-of-type{
      grid-area: porfolio;
 }
+/*
 #python-grid > div:last-of-type{
     grid-area: descargaYoutube;
 }
+*/
 @media(max-width: 500px){
     #python-grid{
         display: grid;
         grid-template-areas: 
         "porfolio"
-        "descargaYoutube"
+        /*"descargaYoutube"*/
     }
 }
 

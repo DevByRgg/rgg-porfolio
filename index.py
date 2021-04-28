@@ -6,8 +6,6 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
-
-
 #---------------HOME---------------
 @app.route('/java')
 def java():
@@ -109,6 +107,7 @@ def srcFitMed():
     #return redirect('http://')
 
 
+
     #---GestAulas-Mobile-----------
 @app.route('/android/gestAulasMobile')
 def gestAulasMobile():
@@ -117,6 +116,7 @@ def gestAulasMobile():
 @app.route('/android/gestAulasMobile/src')
 def srcGestAulasMobile():
     return redirect('https://github.com/DevByRgg/rgg-gestaulasmobile')
+
 
 
     #---GesTension-----------------
@@ -131,11 +131,10 @@ def srcGesTension():
     #return redirect('http://')
 
 
-    
-    
-
 
 #---------------JAVASCRIPT----------
+    #---Varios----------------------
+
 
 
 if __name__ == '__main__':
