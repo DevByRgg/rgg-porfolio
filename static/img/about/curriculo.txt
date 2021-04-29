@@ -1,0 +1,117 @@
+https://rgg-porfolio.herokuapp.com/
+
+FORMACIÓN ACADÉMICA:
+Carrera de Arquitectura Superior a falta del proyecto fin de carrera
+Bachillerato en Colegio Zurbarán (Colmenar Viejo)
+
+
+IDIOMAS:
+		Hablado		Escrito		Lectura
+Castellano:	Nativo		Nativo		Nativo
+Ingles:		Básico		Alto		Alto
+
+
+EXPERIENCIA:
+2020-2021	-Cice. Analista programador Junior.
+	Realización de aplicación web para la gestión de las aulas.
+	Diseño de la bbdd para la aplicación.
+	Backend de la aplicación.
+	Frontend de la aplicación.
+	Test unitarios.
+	Documentación, manual de usuario y manual de instalación.
+	Aplicación Android con conexión a la aplicación.
+
+2016-2019	-Grupo Gfi. Tecnico de operaciones de datacenter.
+	Realización de manos remotas en caso de incidencia.
+	Scorting de clientes y otros técnicos.
+	Cambios de cintas.
+	Cableado y manipulación de hardware
+	Inventarios y control de almacén
+	Chequeo del nodo
+
+2009- 2016	-Autónomo.
+	Servicio integral de instalación, configuración y mantenimiento de redes y equipos informáticos para pymes.
+	Instalación, configuración y mantenimiento de redes.
+	Montaje, instalación y actualización de equipos a nivel de hardware y de software.
+	Instalaciones de Bases de datos, migraciones, tareas de mantenimiento y backups.
+	Resolución de incidencias tanto presencial como en remoto.
+
+2008-2009	-Servicios ingeniería y gestión, S.A. Delineante.
+	Planos de obra
+	Instalaciones.
+	Replanteos en obra.
+	Reuniones con los proveedores.
+	Reuniones tecnicas con el cliente.
+
+2005-2008	-Tasvalor, S.A. Delineante.
+	Planos de obra.
+	Instalaciones.
+	Diseño 3d, etc.
+	Mediciones.
+
+2005		-INECO-TIFSA. Delineante.
+	Planos de obra.
+	Instalaciones.
+	Diseño 3d, etc.
+	Mediciones.
+
+1999-2001	-Universidad Europea de Madrid. Monitor de informática.
+	Dar soporte a los estudiantes que lo necesitasen en las aulas de informática y CAD.
+	Configuración y mantenimiento de impresoras y plotters.
+
+
+CURSOS:
+-Certificado de profesionalidad IFCT0609 Programación de Sistemas informáticos 590 Horas
+-Administración Avanzada de Base de Datos ORACLE (Oracle University) 175 Horas
+     Oracle Database: Optimización.
+     Oracle Database: Alta disponibilidad.
+     Oracle Database: Real Application Cluster.
+     Oracle Database: Seguridad.
+     MySQL Cluster.
+     Oracle Database: Base de datos en nubes privadas.
+     Enterprise Manager Cloud Control.
+-Administración de bases de datos ORACLE (Oracle University) 200 Horas
+     Oracle Database: Taller de Administración.
+     Oracle Database: Taller de Administración Avanzada.
+     Ajustes de SQL.
+     Administración de MySQL.
+     Ajustes de rendimiento de MySQL.
+     Administración de Redes en Sistemas Solaris.
+     Fundamentos de Servidor de aplicaciones WebLogic
+-Fundamentos de Administración de bases de datos ORACLE (Oracle University) 170 Horas	
+     Fundamentos de Sistemas Unix
+     Programación Perl
+     Introducción a SQL
+     Programación con PL/SQL.
+     Fundamentos de MySQL
+     Oracle Database: Taller de Administración
+-Administrador Basis - Nivel inicial 80 Horas
+-Consultor Sap Logistica y Materiales (MM)
+-Curso de informática entorno Windows. Redes y Sistemas 180 Horas
+-Curso Oficial de Modelado de Proyectos Arquitectónicos con 3ds max8 y Vray. 150 Horas
+-Curso de Dibujo en Autocad 2D / 3D. 100 Horas
+
+
+INFORMÁTICA:
+	-Nivel bajo
+		API, Contaplus, Farmatic, JavaScript, Oracle VM, Postman, REST.
+	-Nivel medio
+		3D Studio Max, Android, Android SDK, Apache Tomcat, ASM, CSS3, Diseño de redes,
+		Git, Github, Hibernate, HTML5, JSTL, JUnit, Microsoft Office, Microsoft SQL Server,
+		Oracle Clusterware, Oracle DBA, Oracle Grid, Oracle RAC, PL/SQL, PostgreSQL,
+		Redes informáticas, SAP Basis, SAP MM, Servicios de acceso remoto, SQLite,
+		Test unitario, Virtualización, VMware, Windows Server.
+	-Nivel Alto
+		AutoCad, Backup de bases de datos, Backup y Restore, Bbdd, Bootstrap, Cableado, 
+		Diagnósticos de hardware, Eclipse, Gestión de impresión, Instalación de hardware,
+		Impresoras, Instalación de hardware, Instalación de software, J2EE, Java, JPA, JSP
+		Linux, Maven, MySQL, Oracle, Oracle 12c, Python, Resolución de problemas, RMAN,
+		Soporte de hardware, Spring, Spring Boot, Spring Framework, Spring-mvc, SQL,
+		Trabajo en equipo, Virtualbox, WebServices, Windows.
+
+
+DATOS DE INTERÉS:
+	Carnet de conducir:		Tipo B
+	Vehículo propio:		Si
+	Movilidad geográfica:		Si
+	Traslado de residencia:		Según condiciones
